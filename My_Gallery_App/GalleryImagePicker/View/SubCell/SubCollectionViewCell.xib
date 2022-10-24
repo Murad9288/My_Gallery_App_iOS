@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="SubCollectionViewCell" customModule="My_Gallery_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="10" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="bdJ-ht-AO6">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3mW-Y7-XbU">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="142"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="bottom" secondItem="SxM-7W-XkQ" secondAttribute="bottom" id="2y9-g8-8nO"/>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="height" secondItem="EAT-qu-MBZ" secondAttribute="height" id="CDK-dQ-H6V"/>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="trailing" secondItem="SxM-7W-XkQ" secondAttribute="trailing" id="YYd-9L-cus"/>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="leading" secondItem="SxM-7W-XkQ" secondAttribute="leading" id="ouN-QW-Eik"/>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="width" secondItem="EAT-qu-MBZ" secondAttribute="width" id="ppV-i4-V4f"/>
+                            <constraint firstItem="3mW-Y7-XbU" firstAttribute="top" secondItem="SxM-7W-XkQ" secondAttribute="top" id="rr0-fw-ifJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="SxM-7W-XkQ"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="EAT-qu-MBZ"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bdJ-ht-AO6" secondAttribute="bottom" id="Qx3-1E-CHp"/>
+                <constraint firstAttribute="trailing" secondItem="bdJ-ht-AO6" secondAttribute="trailing" id="ZNc-DA-7us"/>
+                <constraint firstItem="bdJ-ht-AO6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ddk-FG-WoI"/>
+                <constraint firstItem="bdJ-ht-AO6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hYN-lG-vsT"/>
+            </constraints>
+            <size key="customSize" width="499" height="45"/>
+            <connections>
+                <outlet property="imageView" destination="3mW-Y7-XbU" id="voq-r3-fMX"/>
+                <outlet property="scrollView" destination="bdJ-ht-AO6" id="zDd-ld-q3q"/>
+            </connections>
+            <point key="canvasLocation" x="-136.15384615384616" y="1814.2180094786729"/>
+        </collectionViewCell>
+    </objects>
+</document>

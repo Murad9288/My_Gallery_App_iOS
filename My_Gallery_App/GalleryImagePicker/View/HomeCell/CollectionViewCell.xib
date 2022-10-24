@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="My_Gallery_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="176" height="117"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-3r-EA8">
+                        <rect key="frame" x="5" y="6.6666666666666643" width="166" height="104"/>
+                        <imageReference key="image" image="photo" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color red="0.99488563139999997" green="0.79802268089999995" blue="0.68415273619999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-U9-QGs">
+                        <rect key="frame" x="136" y="2" width="43" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ME2-M8-jhG"/>
+                            <constraint firstAttribute="width" constant="43" id="dcE-pN-X7A"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system">
+                            <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3pZ-U9-QGs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="9y8-RU-Z9Q"/>
+                <constraint firstAttribute="trailing" secondItem="3pZ-U9-QGs" secondAttribute="trailing" constant="-3" id="C7n-As-84w"/>
+                <constraint firstAttribute="trailing" secondItem="Nbh-3r-EA8" secondAttribute="trailing" constant="5" id="Hgl-s7-q2D"/>
+                <constraint firstAttribute="bottom" secondItem="Nbh-3r-EA8" secondAttribute="bottom" constant="5" id="bO8-dA-5ek"/>
+                <constraint firstItem="Nbh-3r-EA8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="duE-fT-8nG"/>
+                <constraint firstItem="Nbh-3r-EA8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hYY-tu-QQh"/>
+            </constraints>
+            <size key="customSize" width="176" height="117"/>
+            <connections>
+                <outlet property="imageVieW" destination="Nbh-3r-EA8" id="CBE-aq-v02"/>
+                <outlet property="removeButton" destination="3pZ-U9-QGs" id="aYK-wl-j8a"/>
+            </connections>
+            <point key="canvasLocation" x="170.76923076923077" y="43.720379146919427"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
