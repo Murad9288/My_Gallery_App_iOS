@@ -59,6 +59,8 @@ extension ImageViewViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SubCollectionViewCell
         cell.imageView.image = imageArr[indexPath.row]
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = 20
         return cell
     }
     
