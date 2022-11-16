@@ -10,4 +10,4 @@ I have created a gallery app. Applying some new experience to learn iOS developm
 <br/>
 
 
-<h1><p align="center"><img src="./Image sample/g.gif" width='300px' height='540px'></p></h1> 
+<img src="./Image sample/g.gif" width='300px' height='540px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/video2.gif" width='300px' height='540px'>
