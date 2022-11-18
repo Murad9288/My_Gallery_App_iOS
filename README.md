@@ -4,6 +4,8 @@ I have created a gallery app. Applying some new experience to learn iOS developm
 
 ### The length of the gif file is 35 seconds. So take some time and watch till the end -->
 
+![](https://img.shields.io/badge/Build-passing-green.svg?style=flat)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![](https://img.shields.io/badge/Platform -iOS-golden.svg?style=flat)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://img.shields.io/badge/Supported-iOS16.1%20%7C%20OSX%2016.1-4BC51D.svg?style=flat-square)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://img.shields.io/badge/Swift-5.7.1-orange.svg?style=flat)
 
