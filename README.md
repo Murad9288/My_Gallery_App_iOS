@@ -1,5 +1,8 @@
+
+<div align = "center">
 # My_Gallery_App
 
+  
 I have created a gallery app. Applying some new experience to learn iOS development.
 
 ### The length of the gif file is 35 seconds. So take some time and watch till the end -->
@@ -13,3 +16,5 @@ I have created a gallery app. Applying some new experience to learn iOS developm
 
 
 <img src="./Image sample/g.gif" width='300px' height='540px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Image sample/video2.gif" width='300px' height='540px'>
+
+</div>
