@@ -1,6 +1,6 @@
 
 <div align = "center">
-# My_Gallery_App
+  <h1>My_Gallery_App</h1>
 
   
 I have created a gallery app. Applying some new experience to learn iOS development.
